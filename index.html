@@ -388,7 +388,6 @@ function renderFeedback(){
   if(FEEDBACK_FORM_URL){
     const embed = FEEDBACK_FORM_URL + (FEEDBACK_FORM_URL.indexOf("?")>=0 ? "&embedded=true" : "?embedded=true");
     host.innerHTML =
-      '<p class="note" style="margin:-6px 0 12px">Anything confusing, broken, or worth adding? Tell us \u2014 it goes straight to the class feedback sheet.</p>'+
       '<div class="fb-embed"><iframe title="App feedback form" src="'+esc(embed)+'" loading="lazy">Loading\u2026</iframe></div>'+
       '<p class="note" style="margin-top:8px"><a class="fb-link" href="'+esc(FEEDBACK_FORM_URL)+'" target="_blank" rel="noopener">Open the feedback form in a new tab \u2197</a></p>';
   } else {
